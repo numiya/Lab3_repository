@@ -20,6 +20,8 @@ public class AddressBook {
     }
 
     public void removeBuddy(BuddyInfo bud){
-        buddies.remove(bud);
+        if (!buddies.isEmpty()) {
+            buddies.remove(bud);
+        }
     }
 }
